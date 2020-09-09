@@ -30,7 +30,7 @@ Action Agent::Process (Percept& percept)
 
 	Action action;
 
-    // a. If the Glitter percept is True, then execute the GRAB action.
+	// a. If the Glitter percept is True, then execute the GRAB action.
 	// b. If the agent is in the (1,1) location and has the gold, then CLIMB.
 	// c. If the agent has an arrow, and the agent is in the top row (Y=4), and the agent’s
 	// orientation=RIGHT, then SHOOT.
@@ -113,33 +113,6 @@ Action Agent::Process (Percept& percept)
 
 
 	return action;
-	// char c;
-	// Action action;
-	// bool validAction = false;
-
-	// while (! validAction)
-	// {
-	// 	validAction = true;
-	// 	cout << "Action? ";
-	// 	cin >> c;
-	// 	if (c == 'f') {
-	// 		action = GOFORWARD;
-	// 	} else if (c == 'l') {
-	// 		action = TURNLEFT;
-	// 	} else if (c == 'r') {
-	// 		action = TURNRIGHT;
-	// 	} else if (c == 'g') {
-	// 		action = GRAB;
-	// 	} else if (c == 's') {
-	// 		action = SHOOT;
-	// 	} else if (c == 'c') {
-	// 		action = CLIMB;
-	// 	} else {
-	// 		cout << "Huh?" << endl;
-	// 		validAction = false;
-	// 	}
-	// }
-	// return action;
 }
 
 void Agent::GameOver (int score)
